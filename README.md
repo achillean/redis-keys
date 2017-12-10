@@ -2,7 +2,7 @@
 
 This repository contains all the scripts necessary to keep track of the keys that Internet-accessible Redis servers are using. This can reveal whether anybody's currently compromising Redis databases across the Internet.
 
-# Requirements
+## Requirements
 
 The project is managed using [pipenv](https://docs.pipenv.org/) and if you have it installed you can simply run the following from the project directory:
 
@@ -16,7 +16,7 @@ The **shodan** Python package also includes the [Shodan CLI](https://cli.shodan.
 
     shodan init YOUR_API_KEY
 
-# Usage
+## Usage
 
 The **grab-data.sh** script downloads a list of public Redis servers and stores the data in a file called **redis.json.gz**. This Shodan data file is then processed using the **keys.py** script which will print a list of the top 20 most common Redis keys.
 
